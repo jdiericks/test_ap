@@ -1,0 +1,37 @@
+<%= form_with(model: timecard, local: true) do |form| %>
+  <% if timecard.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(timecard.errors.count, "error") %> prohibited this timecard from being saved:</h2>
+
+      <ul>
+      <% timecard.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.text_field :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :return %>
+    <%= form.number_field :return %>
+  </div>
+
+  <div class="field">
+    <%= form.label :placements %>
+    <%= form.number_field :placements %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hours %>
+    <%= form.number_field :hours %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

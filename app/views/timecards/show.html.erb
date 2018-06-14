@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @timecard.date %>
+</p>
+
+<p>
+  <strong>Return:</strong>
+  <%= @timecard.return %>
+</p>
+
+<p>
+  <strong>Placements:</strong>
+  <%= @timecard.placements %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @timecard.hours %>
+</p>
+
+<%= link_to 'Edit', edit_timecard_path(@timecard) %> |
+<%= link_to 'Back', timecards_path %>

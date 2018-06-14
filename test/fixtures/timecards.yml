@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  return: 1
+  placements: 1
+  hours: 1
+
+two:
+  date: MyString
+  return: 1
+  placements: 1
+  hours: 1
